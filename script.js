@@ -15,10 +15,7 @@ img.filename = "arriba.png";
 if (window.devicePixelRatio >= 2) {
   var nameParts = img.filename.split(".");
   img.src = img.loc + nameParts[0] + "." + nameParts[1];
-} else {
-  img.src =
-    "https://www.zooplus.es/magazine/wp-content/uploads/2018/04/fotolia_169457098.jpg";
-}
+} 
 
 function detectLeftButton(event) {
   if ("buttons" in event) {
