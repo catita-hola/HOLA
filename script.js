@@ -15,7 +15,9 @@ img.filename = "arriba.png";
 if (window.devicePixelRatio >= 2) {
   var nameParts = img.filename.split(".");
   img.src = img.loc + nameParts[0] + "." + nameParts[1];
-} 
+} else {
+  img.src ="arriba.png";
+}
 
 function detectLeftButton(event) {
   if ("buttons" in event) {
