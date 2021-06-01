@@ -10,13 +10,13 @@ if (brushRadius < 50) {
 img.onload = function () {
   bridgeCanvas.drawImage(img, 0, 0, bridge.width, bridge.height);
 };
-img.loc = "img/arriba.png";
+img.loc = "img/";
 img.filename = "arriba.png";
 if (window.devicePixelRatio >= 2) {
   var nameParts = img.filename.split(".");
   img.src = img.loc + nameParts[0] + "." + nameParts[1];
 } else {
-  img.src= "img/arriba.png";
+  img.filename= "img/arriba.png";
 }
 
 function detectLeftButton(event) {
